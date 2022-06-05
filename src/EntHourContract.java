@@ -3,12 +3,12 @@ import java.util.Date;
 public class EntHourContract {
 
     private Date date;
-    private Double valuePerHour;
+    private double valuePerHour;
     private Integer hours;
 
-    public EntHourContract(){
-    }
-    public EntHourContract(Date date, Double valuePerHour, Integer hours) {
+    public EntHourContract(){}
+
+    public EntHourContract(Date date, double valuePerHour, Integer hours) {
         this.date = date;
         this.valuePerHour = valuePerHour;
         this.hours = hours;
@@ -22,11 +22,11 @@ public class EntHourContract {
         this.date = date;
     }
 
-    public Double getValuePerHour() {
+    public double getValuePerHour() {
         return valuePerHour;
     }
 
-    public void setValuePerHour(Double valuePerHour) {
+    public void setValuePerHour(double valuePerHour) {
         this.valuePerHour = valuePerHour;
     }
 
@@ -37,9 +37,7 @@ public class EntHourContract {
     public void setHours(Integer hours) {
         this.hours = hours;
     }
-    //metoto
-    public double totalValue(){
+    public Double totalValue(){
         return valuePerHour * hours;
     }
-
 }

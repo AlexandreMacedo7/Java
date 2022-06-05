@@ -2,8 +2,8 @@ public class EntDepartament {
 
     private String name;
 
-    public EntDepartament(){
-    }
+    public EntDepartament(){}
+
     public EntDepartament(String name) {
         this.name = name;
     }
